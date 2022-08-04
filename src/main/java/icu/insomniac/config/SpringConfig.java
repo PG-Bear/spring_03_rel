@@ -7,7 +7,7 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @ComponentScan("icu.insomniac")
-@PropertySource("my.properties")
+@PropertySource("classpath:my.properties")
 @Import({JdbcConfig.class, MybatisConfig.class})
 public class SpringConfig {
 }
